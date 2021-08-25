@@ -60,7 +60,7 @@ function sleep(delay) {
     })
 }
 
-const mintToken = async (_tokenAmount) => {
+const mintToken = async (_mintAddress,_tokenAmount) => {
     //rinkeby主账户地址
     var fromAddress = "0x8AF41Cacb5FE289587292BA3c7eaa4a65b383c80";
     
@@ -74,18 +74,18 @@ const mintToken = async (_tokenAmount) => {
     var nonceCnt = await web3.eth.getTransactionCount(fromAddress);
     console.log(`num transactions so far: ${nonceCnt}`);
 
-    
+
     //通过ABI和地址获取已部署的合约对象
-    var contract = new web3.eth.Contract(JSON.parse(bobAbi), bobAddress,{from:fromAddress});
+    var contract = new web3.eth.Contract(JSON.parse(bobAbi), bobAddress,{from:_mintAddress});
 
     //await getBalance(contract,fromAddress);
 
     const privkey = getPriKey("../keys/edgekey")
-    await signTransaction(fromAddress,bobAddress,contract,_tokenAmount,nonceCnt, privkey)
+    await signTransaction(_mintAddress,bobAddress,contract,_tokenAmount,nonceCnt, privkey)
 
     sleep(100) //100ms
 
-    console.log("after mint");
+    console.log("Mint Success !");
     //await getBalance(contract,fromAddress);
     
 }
@@ -100,12 +100,27 @@ const mintToken = async (_tokenAmount) => {
 //     return originalCatch.apply(this, arguments);
 // };
 
-mintToken(400)
-  .then((value) => {
-    console.log(value);
-    // expected output: "Success!"
+
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
   })
-  .catch((error) => {
+  
+  readline.question(`Please input address : `, _address => {
+    readline.question(`Input Amount : `, _amount => {
+        mintToken(_address,_amount)
+        .then((value) => {
+        console.log(value);
+    // expected output: "Success!"
+        })
+    .catch((error) => {
     console.log(error);
     // expected output: "Success!"
   });
+    readline.close()
+      })
+      //console.log(_address+"mint : "+_amount);
+    //readline.close()
+  })
+
+

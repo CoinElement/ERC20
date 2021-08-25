@@ -90,22 +90,27 @@ const TokenTransfer = async (_fromAddress,_toAddress,_amount) => {
     
 }
 
-// mintToken(70).then = function(){
-//     console.log('> > > > > > called .then on %o with arguments: %o', this, arguments);
-//     return originalThen.apply(this, arguments);
-// };
 
-// Promise.prototype.catch = function(){
-//     console.error('> > > > > > called .catch on %o with arguments: %o', this, arguments);
-//     return originalCatch.apply(this, arguments);
-// };
 
-TokenTransfer("0x8AF41Cacb5FE289587292BA3c7eaa4a65b383c80","0xcc59fe99835f59fabC055D41A5b5C12E6a36aF13",100)
-  .then((value) => {
-    console.log(value);
-    // expected output: "Success!"
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
   })
-  .catch((error) => {
-    console.log(error);
-    // expected output: "Success!"
-  });
+  
+  readline.question(`TransferAddress: `, _transfer => {
+    readline.question(`ReceiverAddress: `, _receiver => {
+        readline.question(`Amount: `, _amount => {
+            TokenTransfer(_transfer,_receiver,_amount)
+            .then((value) => {
+                console.log(value);
+                // expected output: "Success!"
+                })
+            .catch((error) => {
+                console.log(error);
+                // expected output: "Success!"
+            });
+            readline.close()
+        })
+      })
+  })
+

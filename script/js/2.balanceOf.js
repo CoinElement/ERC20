@@ -8,7 +8,7 @@ var web3 = new Web3(new Web3.providers.HttpProvider(`https://rpc-mumbai.maticvig
 //读取num属性
 async function getBalance(contractObj,fromAddr) {
     let myValue = await contractObj.methods.balanceOf(fromAddr).call({from:fromAddr});
-    console.log("balanceOf: ",myValue);
+    console.log("balanceOf: "+fromAddr+" : "+myValue);
 }
 
 function getPriKey(prikeyPath) {
@@ -98,8 +98,13 @@ const mintToken = async (_address) => {
 //     console.error('> > > > > > called .catch on %o with arguments: %o', this, arguments);
 //     return originalCatch.apply(this, arguments);
 // };
+const readline = require('readline').createInterface({
+    input: process.stdin,
+    output: process.stdout
+  })
 
-mintToken("0x8AF41Cacb5FE289587292BA3c7eaa4a65b383c80")
+  readline.question(`Please input address:  `, _address => {
+    mintToken(`${_address}`)
   .then((value) => {
     console.log(value);
     // expected output: "Success!"
@@ -108,3 +113,6 @@ mintToken("0x8AF41Cacb5FE289587292BA3c7eaa4a65b383c80")
     console.log(error);
     // expected output: "Success!"
   });
+    readline.close()
+  })
+
