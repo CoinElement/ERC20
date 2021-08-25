@@ -74,6 +74,7 @@ const mintToken = async (_tokenAmount) => {
     var nonceCnt = await web3.eth.getTransactionCount(fromAddress);
     console.log(`num transactions so far: ${nonceCnt}`);
 
+    
     //通过ABI和地址获取已部署的合约对象
     var contract = new web3.eth.Contract(JSON.parse(bobAbi), bobAddress,{from:fromAddress});
 
