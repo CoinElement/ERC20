@@ -84,7 +84,7 @@ const mintToken = async (_address) => {
 
     sleep(100) //100ms
 
-    console.log("after mint");
+    
     await getBalance(contract,_address);
     
 }
@@ -98,6 +98,9 @@ const mintToken = async (_address) => {
 //     console.error('> > > > > > called .catch on %o with arguments: %o', this, arguments);
 //     return originalCatch.apply(this, arguments);
 // };
+
+//argv
+
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
