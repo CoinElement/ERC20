@@ -5,6 +5,8 @@ const fs = require('fs');
 // const infuraKey = fs.readFileSync("./test/bob.infuraKey").toString().trim();
 var web3 = new Web3(new Web3.providers.HttpProvider(`https://rpc-mumbai.maticvigil.com`));
 
+
+
 //读取num属性
 async function getBalance(contractObj,fromAddr) {
     let myValue = await contractObj.methods.balanceOf(fromAddr).call({from:fromAddr});
@@ -68,7 +70,7 @@ const mintToken = async (_address) => {
     var bobAbi = fs.readFileSync("../abi/DSTokenBase.json","utf-8");
 
     // bob合约地址
-    var bobAddress = "0x4d1AaAC5fb738e299646346e4A4aAad54fD7A6A6";
+    var bobAddress = "0x9Eb01347e477EF1B630F7B499AE74A1a2d35F1f7";
     
     // get the nonce
     var nonceCnt = await web3.eth.getTransactionCount(fromAddress);
@@ -101,21 +103,33 @@ const mintToken = async (_address) => {
 
 //argv
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  })
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   })
 
-  readline.question(`Please input address:  `, _address => {
-    mintToken(`${_address}`)
-  .then((value) => {
-    console.log(value);
-    // expected output: "Success!"
-  })
-  .catch((error) => {
-    console.log(error);
-    // expected output: "Success!"
-  });
-    readline.close()
-  })
+//   readline.question(`Please input address:  `, _address => {
+//     mintToken(`${_address}`)
+//   .then((value) => {
+//     console.log(value);
+//     // expected output: "Success!"
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//     // expected output: "Success!"
+//   });
+//     readline.close()
+//   })
 
+var args = process.argv.splice(2)
+console.log(args[0]);
+
+mintToken(args[0])
+.then((value) => {
+  console.log(value);
+  // expected output: "Success!"
+})
+.catch((error) => {
+  console.log(error);
+  // expected output: "Success!"
+})

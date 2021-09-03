@@ -69,7 +69,7 @@ const TokenTransfer = async (_fromAddress,_toAddress,_amount) => {
     var bobAbi = fs.readFileSync("../abi/DSTokenBase.json","utf-8");
 
     // bob合约地址
-    var bobAddress = "0x4d1AaAC5fb738e299646346e4A4aAad54fD7A6A6";
+    var bobAddress = "0x9Eb01347e477EF1B630F7B499AE74A1a2d35F1f7";
     
     // get the nonce
     var nonceCnt = await web3.eth.getTransactionCount(fromAddress);
@@ -92,25 +92,37 @@ const TokenTransfer = async (_fromAddress,_toAddress,_amount) => {
 
 
 
-const readline = require('readline').createInterface({
-    input: process.stdin,
-    output: process.stdout
-  })
+// const readline = require('readline').createInterface({
+//     input: process.stdin,
+//     output: process.stdout
+//   })
   
-  readline.question(`TransferAddress: `, _transfer => {
-    readline.question(`ReceiverAddress: `, _receiver => {
-        readline.question(`Amount: `, _amount => {
-            TokenTransfer(_transfer,_receiver,_amount)
-            .then((value) => {
-                console.log(value);
-                // expected output: "Success!"
-                })
-            .catch((error) => {
-                console.log(error);
-                // expected output: "Success!"
-            });
-            readline.close()
+//   readline.question(`TransferAddress: `, _transfer => {
+//     readline.question(`ReceiverAddress: `, _receiver => {
+//         readline.question(`Amount: `, _amount => {
+//             TokenTransfer(_transfer,_receiver,_amount)
+//             .then((value) => {
+//                 console.log(value);
+//                 // expected output: "Success!"
+//                 })
+//             .catch((error) => {
+//                 console.log(error);
+//                 // expected output: "Success!"
+//             });
+//             readline.close()
+//         })
+//       })
+//   })
+var args = process.argv.splice(2)
+console.log(args);
+
+TokenTransfer(args[0],args[1],args[2])
+    .then((value) => {
+        console.log(value);
+        // expected output: "Success!"
         })
-      })
-  })
+    .catch((error) => {
+        console.log(error);
+        // expected output: "Success!"
+    });
 
