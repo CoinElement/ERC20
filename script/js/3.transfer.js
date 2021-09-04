@@ -91,28 +91,6 @@ const TokenTransfer = async (_fromAddress,_toAddress,_amount) => {
 }
 
 
-
-// const readline = require('readline').createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   })
-  
-//   readline.question(`TransferAddress: `, _transfer => {
-//     readline.question(`ReceiverAddress: `, _receiver => {
-//         readline.question(`Amount: `, _amount => {
-//             TokenTransfer(_transfer,_receiver,_amount)
-//             .then((value) => {
-//                 console.log(value);
-//                 // expected output: "Success!"
-//                 })
-//             .catch((error) => {
-//                 console.log(error);
-//                 // expected output: "Success!"
-//             });
-//             readline.close()
-//         })
-//       })
-//   })
 var args = process.argv.splice(2)
 console.log(args);
 

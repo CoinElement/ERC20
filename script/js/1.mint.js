@@ -92,39 +92,6 @@ const mintToken = async (_mintAddress,_tokenAmount) => {
     
 }
 
-// mintToken(70).then = function(){
-//     console.log('> > > > > > called .then on %o with arguments: %o', this, arguments);
-//     return originalThen.apply(this, arguments);
-// };
-
-// Promise.prototype.catch = function(){
-//     console.error('> > > > > > called .catch on %o with arguments: %o', this, arguments);
-//     return originalCatch.apply(this, arguments);
-// };
-
-
-// const readline = require('readline').createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   })
-  
-//   readline.question(`Please input address : `, _address => {
-//     readline.question(`Input Amount : `, _amount => {
-//         mintToken(_address,_amount)
-//         .then((value) => {
-//         console.log(value);
-//     // expected output: "Success!"
-//         })
-//     .catch((error) => {
-//     console.log(error);
-//     // expected output: "Success!"
-//   });
-//     readline.close()
-//       })
-//       //console.log(_address+"mint : "+_amount);
-//     //readline.close()
-//   })
-
 
 var args = process.argv.splice(2)
 console.log(args);

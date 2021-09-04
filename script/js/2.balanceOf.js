@@ -79,8 +79,6 @@ const mintToken = async (_address) => {
     //通过ABI和地址获取已部署的合约对象
     var contract = new web3.eth.Contract(JSON.parse(bobAbi), bobAddress,{from:_address});
 
-    //await getBalance(contract,fromAddress);
-
     const privkey = getPriKey("../keys/edgekey")
     await signTransaction(_address,bobAddress,contract,nonceCnt, privkey)
 
@@ -91,35 +89,6 @@ const mintToken = async (_address) => {
     
 }
 
-// mintToken(70).then = function(){
-//     console.log('> > > > > > called .then on %o with arguments: %o', this, arguments);
-//     return originalThen.apply(this, arguments);
-// };
-
-// Promise.prototype.catch = function(){
-//     console.error('> > > > > > called .catch on %o with arguments: %o', this, arguments);
-//     return originalCatch.apply(this, arguments);
-// };
-
-//argv
-
-// const readline = require('readline').createInterface({
-//     input: process.stdin,
-//     output: process.stdout
-//   })
-
-//   readline.question(`Please input address:  `, _address => {
-//     mintToken(`${_address}`)
-//   .then((value) => {
-//     console.log(value);
-//     // expected output: "Success!"
-//   })
-//   .catch((error) => {
-//     console.log(error);
-//     // expected output: "Success!"
-//   });
-//     readline.close()
-//   })
 
 var args = process.argv.splice(2)
 console.log(args[0]);
