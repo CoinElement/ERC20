@@ -62,26 +62,26 @@ function sleep(delay) {
 }
 
 const TokenTransfer = async (_fromAddress,_toAddress,_amount) => {
-    //rinkeby主账户地址
+    //主账户地址
     var fromAddress = "0x8AF41Cacb5FE289587292BA3c7eaa4a65b383c80";
     
     //bob合约的abi
-    var bobAbi = fs.readFileSync("../abi/DSTokenBase.json","utf-8");
+    var contractAbi = fs.readFileSync("../abi/DSTokenBase.json","utf-8");
 
     // bob合约地址
-    var bobAddress = "0x9Eb01347e477EF1B630F7B499AE74A1a2d35F1f7";
+    var contractAddress = "0x9Eb01347e477EF1B630F7B499AE74A1a2d35F1f7";
     
     // get the nonce
     var nonceCnt = await web3.eth.getTransactionCount(fromAddress);
     console.log(`num transactions so far: ${nonceCnt}`);
 
     //通过ABI和地址获取已部署的合约对象
-    var contract = new web3.eth.Contract(JSON.parse(bobAbi), bobAddress,{from:_fromAddress});
+    var contract = new web3.eth.Contract(JSON.parse(contractAbi), contractAddress,{from:_fromAddress});
 
     //await getBalance(contract,fromAddress);
 
     const privkey = getPriKey("../keys/edgekey")
-    await signTransaction(_fromAddress,bobAddress,_toAddress,contract,_amount,nonceCnt, privkey)
+    await signTransaction(_fromAddress,contractAddress,_toAddress,contract,_amount,nonceCnt, privkey)
 
     sleep(100) //100ms
 
