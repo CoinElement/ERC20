@@ -7,23 +7,26 @@ contract ErcTest{
     address public owner;
     ERC20 public tokenContract;
 
+
     constructor(
-        address tokenContractAddress
+        address tokenContractAddress,
+        address _owner
     ) public{
         tokenContract = ERC20(tokenContractAddress);
+        owner=_owner;
     }
 
      function transferToShop(uint256 _value)
         public
         returns (bool)
     {
-        tokenContract.transferFrom(msg.sender, address(0), _value);
+        tokenContract.transferFrom(msg.sender, address(this), _value);
         return true;
     }
 
     /// @dev 收钱
     function getMoneyFromShop(uint256 _value) public {
-        tokenContract.transferFrom(address(0), msg.sender, _value);
+        tokenContract.transferFrom(address(this), msg.sender, _value);
     }
 
     /// @dev 玩家间交易
