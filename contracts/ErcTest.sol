@@ -20,13 +20,13 @@ contract ErcTest{
         public
         returns (bool)
     {
-        tokenContract.transferFrom(msg.sender, address(this), _value);
+        tokenContract.transferFrom(msg.sender, owner, _value);
         return true;
     }
 
     /// @dev 收钱
     function getMoneyFromShop(uint256 _value) public {
-        tokenContract.transferFrom(address(this), msg.sender, _value);
+        tokenContract.transferFrom(owner, msg.sender, _value);
     }
 
     /// @dev 玩家间交易
@@ -38,4 +38,6 @@ contract ErcTest{
         tokenContract.transferFrom(p1, p2, _value);
         return true;
     }
+
+   
 }

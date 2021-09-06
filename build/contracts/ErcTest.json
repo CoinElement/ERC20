@@ -116,13 +116,13 @@
       "type": "function"
     }
   ],
-  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenContractAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"getMoneyFromShop\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract ERC20\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"p1\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"p2\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferTo\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferToShop\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getMoneyFromShop(uint256)\":{\"details\":\"\\u6536\\u94b1\"},\"transferTo(address,address,uint256)\":{\"details\":\"\\u73a9\\u5bb6\\u95f4\\u4ea4\\u6613\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/ETH Project/Erc20/contracts/ErcTest.sol\":\"ErcTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/ETH Project/Erc20/contracts/ErcTest.sol\":{\"keccak256\":\"0x62b277fd1ab6759c5ed089260f7ae4743659fc41899bc60eef0238f8102046e5\",\"urls\":[\"bzz-raw://9f27ba54f1efd14f918fa047659bbc8bc56ed22be95409c69919be492d5a6b58\",\"dweb:/ipfs/QmbqDw3uiW6ZDfmntuSiGGJYM43DVV7nW5K1XSucL1uw4w\"]},\"/D/ETH Project/Erc20/contracts/erc20.sol\":{\"keccak256\":\"0x813b8a1946ebe6ff83c7f39e97133e61862ebdc6f24e4d53f333c50cdd0caea7\",\"urls\":[\"bzz-raw://8826d9fec6a321ab4d6907b213374ab61f9262d3c694aff49a2b5b2b3d9a539d\",\"dweb:/ipfs/QmaWDPYToeSMCvcFEhpq8TS5KbAT7F3nkvjnNUy5FzU6Bx\"]}},\"version\":1}",
-  "bytecode": "0x608060405234801561001057600080fd5b506040516106f23803806106f28339818101604052604081101561003357600080fd5b81019080805190602001909291908051906020019092919050505081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610612806100e06000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806318a31b011461005c5780632ee5aae6146100a257806355a373d6146100d05780638da5cb5b1461011a578063a5f2a15214610164575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506101ea565b604051808215151515815260200191505060405180910390f35b6100ce600480360360208110156100b857600080fd5b810190808035906020019092919050505061032f565b005b6100d861046c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610122610492565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d06004803603606081101561017a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506104b7565b604051808215151515815260200191505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd336000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156102ea57600080fd5b505af11580156102fe573d6000803e3d6000fd5b505050506040513d602081101561031457600080fd5b81019080805190602001909291905050505060019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1633846040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561042d57600080fd5b505af1158015610441573d6000803e3d6000fd5b505050506040513d602081101561045757600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd8585856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561059657600080fd5b505af11580156105aa573d6000803e3d6000fd5b505050506040513d60208110156105c057600080fd5b81019080805190602001909291905050505060019050939250505056fea265627a7a7231582048d3622f0fef766ab6cc971d220856bb491f74adb14472d8af1d20349618024c64736f6c63430005110032",
-  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806318a31b011461005c5780632ee5aae6146100a257806355a373d6146100d05780638da5cb5b1461011a578063a5f2a15214610164575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506101ea565b604051808215151515815260200191505060405180910390f35b6100ce600480360360208110156100b857600080fd5b810190808035906020019092919050505061032f565b005b6100d861046c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610122610492565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d06004803603606081101561017a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506104b7565b604051808215151515815260200191505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd336000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156102ea57600080fd5b505af11580156102fe573d6000803e3d6000fd5b505050506040513d602081101561031457600080fd5b81019080805190602001909291905050505060019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1633846040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561042d57600080fd5b505af1158015610441573d6000803e3d6000fd5b505050506040513d602081101561045757600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd8585856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561059657600080fd5b505af11580156105aa573d6000803e3d6000fd5b505050506040513d60208110156105c057600080fd5b81019080805190602001909291905050505060019050939250505056fea265627a7a7231582048d3622f0fef766ab6cc971d220856bb491f74adb14472d8af1d20349618024c64736f6c63430005110032",
-  "sourceMap": "61:841:0:-;;;150:174;8:9:-1;5:2;;;30:1;27;20:12;5:2;150:174:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;150:174:0;;;;;;;;;;;;;;;;;;;;;;;;;272:20;250:13;;:43;;;;;;;;;;;;;;;;;;310:6;304:5;;:12;;;;;;;;;;;;;;;;;;150:174;;61:841;;;;;;",
-  "deployedSourceMap": "61:841:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:841:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;333:179;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;333:179:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;541:121;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;541:121:0;;;;;;;;;;;;;;;;;:::i;:::-;;113:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;86:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;700:199;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;700:199:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;333:179;407:4;429:13;;;;;;;;;;;:26;;;456:10;468:5;;;;;;;;;;;475:6;429:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;429:53:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;429:53:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;429:53:0;;;;;;;;;;;;;;;;;500:4;493:11;;333:179;;;:::o;541:121::-;601:13;;;;;;;;;;;:26;;;628:5;;;;;;;;;;;635:10;647:6;601:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;601:53:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;601:53:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;601:53:0;;;;;;;;;;;;;;;;;541:121;:::o;113:26::-;;;;;;;;;;;;;:::o;86:20::-;;;;;;;;;;;;;:::o;700:199::-;810:4;827:13;;;;;;;;;;;:26;;;854:2;858;862:6;827:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;827:42:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;827:42:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;827:42:0;;;;;;;;;;;;;;;;;887:4;880:11;;700:199;;;;;:::o",
-  "source": "pragma solidity >=0.5.8 < 0.6.0;\r\n\r\nimport \"./erc20.sol\";\r\n\r\ncontract ErcTest{\r\n\r\n    address public owner;\r\n    ERC20 public tokenContract;\r\n\r\n\r\n    constructor(\r\n        address tokenContractAddress,\r\n        address _owner\r\n    ) public{\r\n        tokenContract = ERC20(tokenContractAddress);\r\n        owner=_owner;\r\n    }\r\n\r\n     function transferToShop(uint256 _value)\r\n        public\r\n        returns (bool)\r\n    {\r\n        tokenContract.transferFrom(msg.sender, owner, _value);\r\n        return true;\r\n    }\r\n\r\n    /// @dev 收钱\r\n    function getMoneyFromShop(uint256 _value) public {\r\n        tokenContract.transferFrom(owner, msg.sender, _value);\r\n    }\r\n\r\n    /// @dev 玩家间交易\r\n    function transferTo(\r\n        address p1,\r\n        address p2,\r\n        uint256 _value\r\n    ) public returns (bool) {\r\n        tokenContract.transferFrom(p1, p2, _value);\r\n        return true;\r\n    }\r\n}",
-  "sourcePath": "D:/ETH Project/Erc20/contracts/ErcTest.sol",
+  "metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"tokenContractAddress\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"_owner\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"getMoneyFromShop\",\"outputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[],\"name\":\"tokenContract\",\"outputs\":[{\"internalType\":\"contract ERC20\",\"name\":\"\",\"type\":\"address\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"address\",\"name\":\"p1\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"p2\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferTo\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"constant\":false,\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_value\",\"type\":\"uint256\"}],\"name\":\"transferToShop\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{\"getMoneyFromShop(uint256)\":{\"details\":\"\\u6536\\u94b1\"},\"transferTo(address,address,uint256)\":{\"details\":\"\\u73a9\\u5bb6\\u95f4\\u4ea4\\u6613\"}}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/D/ETH Project/Erc20/contracts/ErcTest.sol\":\"ErcTest\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/D/ETH Project/Erc20/contracts/ErcTest.sol\":{\"keccak256\":\"0x509407f2494b84081f5ddf57318eb61a4889af1291d16db59471c2c60b78bbcd\",\"urls\":[\"bzz-raw://dccdc28fd88f19db24480c34533658a7aaf6c8b77ab330741595cf1e4580bc9a\",\"dweb:/ipfs/QmVCv5QUZyAAneGTTtrM75o11gJB2sxFHSzD8P2DMvn5ob\"]},\"/D/ETH Project/Erc20/contracts/erc20.sol\":{\"keccak256\":\"0x813b8a1946ebe6ff83c7f39e97133e61862ebdc6f24e4d53f333c50cdd0caea7\",\"urls\":[\"bzz-raw://8826d9fec6a321ab4d6907b213374ab61f9262d3c694aff49a2b5b2b3d9a539d\",\"dweb:/ipfs/QmaWDPYToeSMCvcFEhpq8TS5KbAT7F3nkvjnNUy5FzU6Bx\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506040516106f23803806106f28339818101604052604081101561003357600080fd5b81019080805190602001909291908051906020019092919050505081600160006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550806000806101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff1602179055505050610612806100e06000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806318a31b011461005c5780632ee5aae6146100a257806355a373d6146100d05780638da5cb5b1461011a578063a5f2a15214610164575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506101ea565b604051808215151515815260200191505060405180910390f35b6100ce600480360360208110156100b857600080fd5b810190808035906020019092919050505061032f565b005b6100d861046c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610122610492565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d06004803603606081101561017a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506104b7565b604051808215151515815260200191505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd336000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156102ea57600080fd5b505af11580156102fe573d6000803e3d6000fd5b505050506040513d602081101561031457600080fd5b81019080805190602001909291905050505060019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1633846040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561042d57600080fd5b505af1158015610441573d6000803e3d6000fd5b505050506040513d602081101561045757600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd8585856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561059657600080fd5b505af11580156105aa573d6000803e3d6000fd5b505050506040513d60208110156105c057600080fd5b81019080805190602001909291905050505060019050939250505056fea265627a7a723158202e153cd6d954ab3f3208d1ca76759ee6953d96e5e11ff28159132a1df1b0f50a64736f6c63430005110032",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806318a31b011461005c5780632ee5aae6146100a257806355a373d6146100d05780638da5cb5b1461011a578063a5f2a15214610164575b600080fd5b6100886004803603602081101561007257600080fd5b81019080803590602001909291905050506101ea565b604051808215151515815260200191505060405180910390f35b6100ce600480360360208110156100b857600080fd5b810190808035906020019092919050505061032f565b005b6100d861046c565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b610122610492565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b6101d06004803603606081101561017a57600080fd5b81019080803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803573ffffffffffffffffffffffffffffffffffffffff169060200190929190803590602001909291905050506104b7565b604051808215151515815260200191505060405180910390f35b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd336000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff16856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b1580156102ea57600080fd5b505af11580156102fe573d6000803e3d6000fd5b505050506040513d602081101561031457600080fd5b81019080805190602001909291905050505060019050919050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1633846040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561042d57600080fd5b505af1158015610441573d6000803e3d6000fd5b505050506040513d602081101561045757600080fd5b81019080805190602001909291905050505050565b600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b6000600160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166323b872dd8585856040518463ffffffff1660e01b8152600401808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1681526020018281526020019350505050602060405180830381600087803b15801561059657600080fd5b505af11580156105aa573d6000803e3d6000fd5b505050506040513d60208110156105c057600080fd5b81019080805190602001909291905050505060019050939250505056fea265627a7a723158202e153cd6d954ab3f3208d1ca76759ee6953d96e5e11ff28159132a1df1b0f50a64736f6c63430005110032",
+  "sourceMap": "61:848:0:-;;;150:174;8:9:-1;5:2;;;30:1;27;20:12;5:2;150:174:0;;;;;;;;;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;150:174:0;;;;;;;;;;;;;;;;;;;;;;;;;272:20;250:13;;:43;;;;;;;;;;;;;;;;;;310:6;304:5;;:12;;;;;;;;;;;;;;;;;;150:174;;61:848;;;;;;",
+  "deployedSourceMap": "61:848:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;61:848:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;333:179;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;333:179:0;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;541:121;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;541:121:0;;;;;;;;;;;;;;;;;:::i;:::-;;113:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;86:20;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;700:199;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;700:199:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;333:179;407:4;429:13;;;;;;;;;;;:26;;;456:10;468:5;;;;;;;;;;;475:6;429:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;429:53:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;429:53:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;429:53:0;;;;;;;;;;;;;;;;;500:4;493:11;;333:179;;;:::o;541:121::-;601:13;;;;;;;;;;;:26;;;628:5;;;;;;;;;;;635:10;647:6;601:53;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;601:53:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;601:53:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;601:53:0;;;;;;;;;;;;;;;;;541:121;:::o;113:26::-;;;;;;;;;;;;;:::o;86:20::-;;;;;;;;;;;;;:::o;700:199::-;810:4;827:13;;;;;;;;;;;:26;;;854:2;858;862:6;827:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;827:42:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;827:42:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;827:42:0;;;;;;;;;;;;;;;;;887:4;880:11;;700:199;;;;;:::o",
+  "source": "pragma solidity >=0.5.8 < 0.6.0;\r\n\r\nimport \"./erc20.sol\";\r\n\r\ncontract ErcTest{\r\n\r\n    address public owner;\r\n    ERC20 public tokenContract;\r\n\r\n\r\n    constructor(\r\n        address tokenContractAddress,\r\n        address _owner\r\n    ) public{\r\n        tokenContract = ERC20(tokenContractAddress);\r\n        owner=_owner;\r\n    }\r\n\r\n     function transferToShop(uint256 _value)\r\n        public\r\n        returns (bool)\r\n    {\r\n        tokenContract.transferFrom(msg.sender, owner, _value);\r\n        return true;\r\n    }\r\n\r\n    /// @dev 收钱\r\n    function getMoneyFromShop(uint256 _value) public {\r\n        tokenContract.transferFrom(owner, msg.sender, _value);\r\n    }\r\n\r\n    /// @dev 玩家间交易\r\n    function transferTo(\r\n        address p1,\r\n        address p2,\r\n        uint256 _value\r\n    ) public returns (bool) {\r\n        tokenContract.transferFrom(p1, p2, _value);\r\n        return true;\r\n    }\r\n\r\n   \r\n}",
+  "sourcePath": "D:\\ETH Project\\Erc20\\contracts\\ErcTest.sol",
   "ast": {
     "absolutePath": "/D/ETH Project/Erc20/contracts/ErcTest.sol",
     "exportedSymbols": {
@@ -153,7 +153,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 82,
-        "sourceUnit": 1794,
+        "sourceUnit": 1880,
         "src": "36:21:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -208,7 +208,7 @@
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_ERC20_$1031",
+              "typeIdentifier": "t_contract$_ERC20_$1117",
               "typeString": "contract ERC20"
             },
             "typeName": {
@@ -216,10 +216,10 @@
               "id": 5,
               "name": "ERC20",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1031,
+              "referencedDeclaration": 1117,
               "src": "113:5:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_ERC20_$1031",
+                "typeIdentifier": "t_contract$_ERC20_$1117",
                 "typeString": "contract ERC20"
               }
             },
@@ -249,7 +249,7 @@
                       "referencedDeclaration": 6,
                       "src": "250:13:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ERC20_$1031",
+                        "typeIdentifier": "t_contract$_ERC20_$1117",
                         "typeString": "contract ERC20"
                       }
                     },
@@ -283,10 +283,10 @@
                         "name": "ERC20",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1031,
+                        "referencedDeclaration": 1117,
                         "src": "266:5:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_ERC20_$1031_$",
+                          "typeIdentifier": "t_type$_t_contract$_ERC20_$1117_$",
                           "typeString": "type(contract ERC20)"
                         }
                       },
@@ -300,13 +300,13 @@
                       "nodeType": "FunctionCall",
                       "src": "266:27:0",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_ERC20_$1031",
+                        "typeIdentifier": "t_contract$_ERC20_$1117",
                         "typeString": "contract ERC20"
                       }
                     },
                     "src": "250:43:0",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_ERC20_$1031",
+                      "typeIdentifier": "t_contract$_ERC20_$1117",
                       "typeString": "contract ERC20"
                     }
                   },
@@ -460,7 +460,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1808,
+                          "referencedDeclaration": 1894,
                           "src": "456:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -532,7 +532,7 @@
                         "referencedDeclaration": 6,
                         "src": "429:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ERC20_$1031",
+                          "typeIdentifier": "t_contract$_ERC20_$1117",
                           "typeString": "contract ERC20"
                         }
                       },
@@ -543,7 +543,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1030,
+                      "referencedDeclaration": 1116,
                       "src": "429:26:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -704,7 +704,7 @@
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1808,
+                          "referencedDeclaration": 1894,
                           "src": "635:3:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_message",
@@ -763,7 +763,7 @@
                         "referencedDeclaration": 6,
                         "src": "601:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ERC20_$1031",
+                          "typeIdentifier": "t_contract$_ERC20_$1117",
                           "typeString": "contract ERC20"
                         }
                       },
@@ -774,7 +774,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1030,
+                      "referencedDeclaration": 1116,
                       "src": "601:26:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -927,7 +927,7 @@
                         "referencedDeclaration": 6,
                         "src": "827:13:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_ERC20_$1031",
+                          "typeIdentifier": "t_contract$_ERC20_$1117",
                           "typeString": "contract ERC20"
                         }
                       },
@@ -938,7 +938,7 @@
                       "lValueRequested": false,
                       "memberName": "transferFrom",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 1030,
+                      "referencedDeclaration": 1116,
                       "src": "827:26:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_address_$_t_uint256_$returns$_t_bool_$",
@@ -1124,10 +1124,10 @@
           }
         ],
         "scope": 82,
-        "src": "61:841:0"
+        "src": "61:848:0"
       }
     ],
-    "src": "0:902:0"
+    "src": "0:909:0"
   },
   "legacyAST": {
     "attributes": {
@@ -1157,7 +1157,7 @@
       },
       {
         "attributes": {
-          "SourceUnit": 1794,
+          "SourceUnit": 1880,
           "absolutePath": "/D/ETH Project/Erc20/contracts/erc20.sol",
           "file": "./erc20.sol",
           "scope": 82,
@@ -1231,7 +1231,7 @@
                 "attributes": {
                   "contractScope": null,
                   "name": "ERC20",
-                  "referencedDeclaration": 1031,
+                  "referencedDeclaration": 1117,
                   "type": "contract ERC20"
                 },
                 "id": 5,
@@ -1386,7 +1386,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1031,
+                                  "referencedDeclaration": 1117,
                                   "type": "type(contract ERC20)",
                                   "value": "ERC20"
                                 },
@@ -1606,7 +1606,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferFrom",
-                              "referencedDeclaration": 1030,
+                              "referencedDeclaration": 1116,
                               "type": "function (address,address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -1647,7 +1647,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1808,
+                                  "referencedDeclaration": 1894,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -1835,7 +1835,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferFrom",
-                              "referencedDeclaration": 1030,
+                              "referencedDeclaration": 1116,
                               "type": "function (address,address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -1890,7 +1890,7 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1808,
+                                  "referencedDeclaration": 1894,
                                   "type": "msg",
                                   "value": "msg"
                                 },
@@ -2113,7 +2113,7 @@
                               "isPure": false,
                               "lValueRequested": false,
                               "member_name": "transferFrom",
-                              "referencedDeclaration": 1030,
+                              "referencedDeclaration": 1116,
                               "type": "function (address,address,uint256) external returns (bool)"
                             },
                             "children": [
@@ -2228,12 +2228,12 @@
         ],
         "id": 81,
         "name": "ContractDefinition",
-        "src": "61:841:0"
+        "src": "61:848:0"
       }
     ],
     "id": 82,
     "name": "SourceUnit",
-    "src": "0:902:0"
+    "src": "0:909:0"
   },
   "compiler": {
     "name": "solc",
@@ -2248,7 +2248,7 @@
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-09-04T02:17:25.995Z",
+  "updatedAt": "2021-09-06T15:33:21.162Z",
   "devdoc": {
     "methods": {
       "getMoneyFromShop(uint256)": {
