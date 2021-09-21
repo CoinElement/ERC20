@@ -2243,12 +2243,13 @@
     "80001": {
       "events": {},
       "links": {},
-      "address": "0xB584893A965c714cec50aBaB74c3D63d303Deb93",
-      "transactionHash": "0x1e7040880ec087723a292c4388604ab65a5e43a567b2a4679123f16703977fca"
+      "address": "0x46868629DAd14970d121E3bc84cf590345b39004",
+      "transactionHash": "0xc58ba747478bd47f743fbb81cd3bc16157395814ec2eed3c5f36542d41e782a7"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-09-06T15:33:21.162Z",
+  "updatedAt": "2021-09-10T18:03:39.701Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {
       "getMoneyFromShop(uint256)": {

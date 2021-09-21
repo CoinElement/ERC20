@@ -31533,12 +31533,13 @@
         }
       },
       "links": {},
-      "address": "0x9Eb01347e477EF1B630F7B499AE74A1a2d35F1f7",
-      "transactionHash": "0xfe4dab616014e51339222441a2bc67e25ff58515ec28c5a62f165ca90478b734"
+      "address": "0x3c428D77e184D1489d659308d2CDB2d3908d3a22",
+      "transactionHash": "0xdc733998db4487086e5cd7235728ca6445c836a7da7cb953fef5a3a3dca7e91e"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-09-06T15:33:21.192Z",
+  "updatedAt": "2021-09-10T18:03:39.691Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

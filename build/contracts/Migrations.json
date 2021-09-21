@@ -921,12 +921,13 @@
     "80001": {
       "events": {},
       "links": {},
-      "address": "0x65Fa20533D295a0bdBc278df2A974BBA4e68797D",
-      "transactionHash": "0xfd356c9de037b9d7a944fd4bff20dd5c8b9613a23f0076c927096d23f40bf70d"
+      "address": "0xD5a15aE4FB9ae88a7Ab3c1729B72a826E14de48c",
+      "transactionHash": "0x01abe9b9c13aa0355a08ae2634508e8ca363800956559f6a273bedaf84ae8bf0"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2021-09-06T15:33:21.164Z",
+  "updatedAt": "2021-09-10T18:03:39.703Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
